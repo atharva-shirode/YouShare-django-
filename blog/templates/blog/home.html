@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% for i in post %}
+<!--passing dictionary and using key of dictionary to traverse through the list-->
+<h1>{{i.title}}</h1>
+<p>{{i.content}}</p>
+<p>By {{i.author}} on {{i.date}}</p>
+{% endfor %}
+{% endblock content %}
+
